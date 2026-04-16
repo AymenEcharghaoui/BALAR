@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+
+# Environment
+.env
+
+# Output directories
+results/
+logs/
+trajectories/

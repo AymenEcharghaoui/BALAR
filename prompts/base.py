@@ -1,0 +1,40 @@
+from dataclasses import dataclass
+
+@dataclass
+class PromptSet:
+    # user simulator
+    USER_SIMULATOR_SYSTEM_PROMPT: str
+    USER_SIMULATOR_WITH_CHOICES_USER_PROMPT: str
+    USER_SIMULATOR_WITHOUT_CHOICES_USER_PROMPT: str
+    # initial stage (dimensions)
+    INITIAL_DIMENSIONS_SYSTEM_PROMPT: str
+    INITIAL_DIMENSIONS_USER_PROMPT: str
+    # initial stage (priors)
+    INITIAL_PRIORS_SYSTEM_PROMPT: str
+    INITIAL_PRIORS_USER_PROMPT: str
+    # initial stage (questions)
+    INITIAL_QUESTIONS_SYSTEM_PROMPT: str
+    INITIAL_QUESTIONS_USER_PROMPT: str
+    # likelihood
+    LIKELIHOOD_SYSTEM_PROMPT: str
+    LIKELIHOOD_WITHOUT_HISTORY_USER_PROMPT: str
+    LIKELIHOOD_WITH_HISTORY_USER_PROMPT: str
+    # natural language scoring
+    SCORE_NATURAL_LANGUAGE_SYSTEM_PROMPT: str
+    SCORE_NATURAL_LANGUAGE_USER_PROMPT: str
+    # expand dimension
+    EXPAND_DIMENSION_SYSTEM_PROMPT: str
+    EXPAND_DIMENSION_USER_PROMPT: str
+    # expand dimension priors
+    EXPAND_DIMENSION_PRIORS_SYSTEM_PROMPT: str
+    EXPAND_DIMENSION_PRIORS_USER_PROMPT: str
+    # expand questions
+    EXPAND_QUESTIONS_SYSTEM_PROMPT: str
+    EXPAND_QUESTIONS_USER_PROMPT: str
+    # final answer
+    FINAL_ANSWER_SYSTEM_PROMPT: str
+    FINAL_ANSWER_WITHOUT_CHOICES_USER_PROMPT: str
+    FINAL_ANSWER_WITH_CHOICES_USER_PROMPT: str
+    # answer likelihood (for options)
+    ANSWER_LIKELIHOOD_SYSTEM_PROMPT: str
+    ANSWER_LIKELIHOOD_USER_PROMPT: str
