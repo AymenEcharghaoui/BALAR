@@ -193,3 +193,23 @@ python run.py \
 | Argument | Default | Description |
 |---|---|---|
 | `--use_verifier` / `--no-use_verifier` | `False` | Enable a self-verification step: after each LLM response, a second call checks validity and optionally corrects it before it is used |
+
+---
+
+## Citation
+
+If you use BALAR in your research, please cite:
+
+```bibtex
+@article{echarghaoui2026balar,
+  title   = {BALAR: A Bayesian Agentic Loop for Active Reasoning},
+  author  = {Echarghaoui, Aymen and Wu, Dongxia and Fox, Emily B.},
+  journal = {arXiv preprint arXiv:2605.05386},
+  year    = {2026},
+  url     = {https://arxiv.org/abs/2605.05386}
+}
+```
+
+## License
+
+This code is released under the [MIT License](LICENSE). The accompanying paper is distributed on arXiv under the [arXiv non-exclusive license](http://arxiv.org/licenses/nonexclusive-distrib/1.0/).
